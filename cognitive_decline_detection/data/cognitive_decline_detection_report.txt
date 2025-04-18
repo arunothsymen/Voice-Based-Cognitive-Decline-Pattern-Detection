@@ -1,0 +1,36 @@
+===== VOICE-BASED COGNITIVE DECLINE PATTERN DETECTION - FINAL REPORT =====
+
+## Overview
+Analyzed 10 voice samples for potential cognitive decline indicators.
+Found 2 samples with significant deviations from normal patterns.
+
+## Most Insightful Features
+1. filler_count (correlation with risk: 0.74)
+2. mfcc9_std (correlation with risk: 0.70)
+3. mfcc13_std (correlation with risk: 0.68)
+4. mfcc5_std (correlation with risk: 0.67)
+5. repetition_count (correlation with risk: 0.66)
+
+## ML Methods Used
+1. Feature Selection: Variance and correlation filtering to identify most relevant features
+2. Anomaly Detection: Isolation Forest to identify outlier speech patterns
+3. Clustering: K-means to group similar speech patterns
+4. Dimensionality Reduction: PCA for visualization and noise reduction
+
+## Risk Assessment Summary
+High risk: 1 samples
+Moderate risk: 5 samples
+Low risk: 4 samples
+
+## Potential Next Steps
+1. Validate findings with clinical data from patients with confirmed cognitive conditions
+2. Add more cognitive-specific tasks (e.g., word recall, sentence completion)
+3. Implement longitudinal tracking to detect changes over time
+4. Integrate with other biomarkers for a more comprehensive assessment
+5. Apply transfer learning using pre-trained speech models for better feature extraction
+
+## Conclusion
+This proof-of-concept pipeline demonstrates the potential of voice analysis
+for detecting cognitive decline patterns. The combination of acoustic and
+linguistic features provides a non-invasive way to identify potential warning signs.
+Further clinical validation is needed for deployment in real-world scenarios.
